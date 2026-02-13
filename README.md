@@ -6,4 +6,10 @@ A simple **Django web app** to create and take quizzes. Users can register, take
 
 - User registration & login  
 - Take quizzes and view results  
-- Admin panel to manage quizzes  
+- Admin panel to manage quizzes
+
+- ## Tech Stack
+
+- Backend: Python, Django  
+- Frontend: HTML, CSS  
+- Database: SQLite
