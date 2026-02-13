@@ -1,0 +1,13 @@
+<h2>Welcome to the Quiz Platform</h2>
+<p>You are logged in as {{ request.user.username }}</p>
+
+<h3>Available Quizzes:</h3>
+<ul>
+{% for quiz in quizzes %}
+  <li><a href="{% url 'take_quiz' quiz.id %}">{{ quiz.title }}</a></li>
+{% empty %}
+  <li>No quizzes available.</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'logout' %}">Logout</a>
